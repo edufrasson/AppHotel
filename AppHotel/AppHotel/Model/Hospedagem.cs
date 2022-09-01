@@ -13,8 +13,8 @@ namespace AppHotel.Model
             get => quarto_escolhido;
             set
             {
-                if(value == null)
-                    throw new Exception("Por favor, selecione uma acomodação!")
+                if (value == null)
+                    throw new Exception("Por favor, selecione uma acomodação!");
 
                 quarto_escolhido = value;
             }
@@ -42,7 +42,7 @@ namespace AppHotel.Model
         }
         public double ValorTotal
         {
-            get => ((QntAdultos * QuartoEscolhido.DiariaAdulto) +
+            get => ((QntAdultos * QuartoEscolhido.DiariaAdulta) +
                      (QntCriancas * QuartoEscolhido.DiariaCrianca)
                    ) * Estadia;
         }
